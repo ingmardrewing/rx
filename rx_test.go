@@ -10,7 +10,7 @@ func TestSubstituteAllOccurences(t *testing.T) {
 	}
 
 	expected := "Hello Wurst! Hello Wurst!"
-	actual, err := rx.SubstituteAllOccurences(txt, "Wurst!")
+	actual := rx.SubstituteAllOccurences(txt, "Wurst!")
 
 	if actual != expected {
 		t.Error("Expected `", expected, "` but got `", actual, "`")

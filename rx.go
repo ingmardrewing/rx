@@ -31,6 +31,6 @@ func (r *rx) compile() error {
 
 // use the regex to substitute all matching
 // parts of the param text with the param replacement
-func (r *rx) SubstituteAllOccurences(text, replacement string) (string, error) {
-	return r.regex.ReplaceAllString(text, replacement), nil
+func (r *rx) SubstituteAllOccurences(text, replacement string) string {
+	return r.regex.ReplaceAllString(text, replacement)
 }
